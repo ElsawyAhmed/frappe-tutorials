@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-12-13 23:57:57.176595",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "question_text",
+  "choice_1",
+  "choice_2",
+  "choice_3",
+  "choice_4",
+  "correct_answer"
+ ],
+ "fields": [
+  {
+   "fieldname": "question_text",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Question Text",
+   "reqd": 1
+  },
+  {
+   "fieldname": "choice_1",
+   "fieldtype": "Data",
+   "label": "Choice 1"
+  },
+  {
+   "fieldname": "choice_2",
+   "fieldtype": "Data",
+   "label": "Choice 2"
+  },
+  {
+   "fieldname": "choice_3",
+   "fieldtype": "Data",
+   "label": "Choice 3"
+  },
+  {
+   "fieldname": "choice_4",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Choice 4"
+  },
+  {
+   "fieldname": "correct_answer",
+   "fieldtype": "Data",
+   "label": "Correct Answer",
+   "print_hide": 1,
+   "report_hide": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-18 21:22:30.382169",
+ "modified_by": "Administrator",
+ "module": "School Management",
+ "name": "Exam Questions",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
