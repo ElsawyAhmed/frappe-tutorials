@@ -9,4 +9,4 @@ class Course(Document):
 	def before_save(self):
 		for student in self.enrolled_students:
 			if student.student_level != self.level:
-				frappe.throw("The Student Level Should be the same as the course level")
+				frappe.throw(f"The Student {student.student} Level Should be the same as the course level")

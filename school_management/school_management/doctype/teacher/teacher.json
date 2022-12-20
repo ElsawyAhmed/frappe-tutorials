@@ -12,7 +12,8 @@
   "last_name",
   "date_of_birth",
   "email",
-  "specialization"
+  "specialization",
+  "full_name"
  ],
  "fields": [
   {
@@ -41,11 +42,17 @@
    "fieldtype": "Link",
    "label": "Specialization",
    "options": "Specialization"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-12-12 20:53:44.398929",
+ "modified": "2022-12-18 15:54:12.937909",
  "modified_by": "Administrator",
  "module": "School Management",
  "name": "Teacher",

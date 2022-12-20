@@ -10,7 +10,9 @@
                 args: {'course': frm.doc.course, 'appointment': frm.doc.appointment},
                 callback: function(r) {
                     // code snippet
-                }
+                },
+                success: function(r) {},
+                error: function(r) {}
             });
           }else{
                 frappe.msgprint("Can't send Emails without submitting course and appointment time!");

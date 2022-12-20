@@ -3,7 +3,6 @@
  "autoname": "autoincrement",
  "creation": "2022-12-12 21:12:30.090499",
  "doctype": "DocType",
- "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "student",
@@ -15,19 +14,22 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Student",
-   "options": "Student"
+   "options": "Student",
+   "reqd": 1
   },
   {
+   "allow_in_quick_entry": 1,
    "fetch_from": "student.level",
    "fieldname": "student_level",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Student Level"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-12-12 22:12:18.803097",
+ "modified": "2022-12-19 20:43:27.903737",
  "modified_by": "Administrator",
  "module": "School Management",
  "name": "Enrolled Students",
