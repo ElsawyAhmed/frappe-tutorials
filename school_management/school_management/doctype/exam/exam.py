@@ -21,12 +21,16 @@ def send_mail(**kwargs):
 		if student.email:
 			recipients.append(student.email)
 	if recipients:
-		frappe.sendmail(
-			recipients=recipients,
-			subject=frappe._('Exam Appointment'),
-			message=f"Dear {student.name},"
-					f"\t Supposed You are enrolled in our course:{course.course_name},"
-					f" you will have an exam at <b>{kwargs['appointment']}</b>"
-					f"\n Best Regards:\n "
-		)
+		try:
+			frappe.sendmail(
+				recipients=recipients,
+				subject='Exam Appointment',
+				message=f"Dear {student.name},"
+						f"\t Supposed You are enrolled in our course:{course.course_name},"
+						f" you will have an exam at <b>{kwargs['appointment']}</b>"
+						f"\n Best Regards:\n "
+			)
+			print("Success")
+		except Exception as e:
+			print("Exception", e)
 	return True

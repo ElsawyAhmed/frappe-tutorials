@@ -6,7 +6,9 @@
  "engine": "InnoDB",
  "field_order": [
   "student",
-  "student_level"
+  "student_level",
+  "grade",
+  "exam"
  ],
  "fields": [
   {
@@ -24,12 +26,30 @@
    "fieldtype": "Int",
    "in_list_view": 1,
    "label": "Student Level"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Grade"
+  },
+  {
+   "fieldname": "exam",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Exam",
+   "options": "Exam"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-12-19 20:43:27.903737",
+ "modified": "2022-12-21 19:22:04.296771",
  "modified_by": "Administrator",
  "module": "School Management",
  "name": "Enrolled Students",

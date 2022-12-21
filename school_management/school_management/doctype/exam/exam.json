@@ -45,10 +45,9 @@
    "options": "Exam Questions"
   }
  ],
- "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-12-15 01:01:20.644268",
+ "modified": "2022-12-21 21:15:16.876978",
  "modified_by": "Administrator",
  "module": "School Management",
  "name": "Exam",
@@ -75,6 +74,7 @@
    "read": 1,
    "report": 1,
    "role": "Teacher",
+   "select": 1,
    "share": 1,
    "write": 1
   }
